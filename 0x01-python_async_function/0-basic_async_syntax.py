@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""0-basic_async_syntax.py
+This defines a coroutine that accepts an int as maxdelay, and awaits
+a random delay <= maxdelay.
+"""
+
+
 import asyncio
 import random
 
