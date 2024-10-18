@@ -10,7 +10,7 @@ from typing import AsyncGenerator
 import random
 
 
-async def async_generator() -> AsyncGenerator[int, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """Coroutine loops, aynchronously waits and yields random number"""
 
     for i in range(10):
