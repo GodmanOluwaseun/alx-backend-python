@@ -6,7 +6,7 @@ Coroutine that takes no arguments and generates random numbers.
 
 
 import asyncio
-from typing import AsyncGenerators
+from typing import AsyncGenerator
 import random
 
 
@@ -15,4 +15,4 @@ async def async_generator()  -> AsyncGenerator[int, None]:
 
     for i in range(10):
         await asyncio.sleep(1)
-        yield (random.randint(0, 10))
+        yield (random.uniform(0, 10))
