@@ -6,11 +6,11 @@ Coroutine that takes no arguments and generates random numbers.
 
 
 import asyncio
-from typing import AsyncGenerator
+from typing import Generator
 import random
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """Coroutine loops, aynchronously waits and yields random number"""
 
     for _ in range(10):
